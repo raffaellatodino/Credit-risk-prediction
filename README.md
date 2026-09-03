@@ -1,35 +1,35 @@
-# Previsione-affidabilità-creditizia
-Master in Data Science: progetto modulo di machine learning modelli e algoritmi - Previsione dell'affidabilità creditizia per il rilascio della carta di credito.  
+# Credit Risk Prediction
+Data Science Master's: Machine Learning Models and Algorithms module project - Credit risk prediction for credit card issuance.  
 
-Sei stato assunto dalla Pro National Bank come data scientist, e il tuo primo incarico consiste nel realizzare un modello in grado di stimare l'affidabilità creditizia dei clienti, al fine di aiutare il team dedicato a comprendere se accettare o meno la richiesta per il rilascio della carta di credito.  
+You have been hired by Pro National Bank as a data scientist, and your first task is to build a model capable of estimating customers' creditworthiness, in order to help the dedicated team understand whether to accept or reject credit card applications.  
 
-## Dati forniti
-Ti vengono consegnati i dati anonimizzati di clienti che hanno già ottenuto la carta di credito e ne pagano regolarmente le rate. I dati sono disponibili nel file CSV [credit_scoring.csv](https://proai-datasets.s3.eu-west-3.amazonaws.com/credit_scoring.csv).  
-Il file credit_scoring.csv contiene le informazioni dei correntisti che hanno richiesto l’apertura di una linea di credito.  
+## Data provided
+You are given anonymized data of customers who have already obtained a credit card and are regularly paying their installments. The data is available in the CSV file [credit_scoring.csv](https://proai-datasets.s3.eu-west-3.amazonaws.com/credit_scoring.csv).  
+The file contains information about account holders who applied for a credit line. 
 
-### Colonne del dataset
-- ID: numero identificativo del cliente  
-- CODE_GENDER: sesso del cliente  
-- FLAGOWNCAR: indicatore del possesso di un'automobile  
-- FLAGOWNREALTY: indicatore del possesso di una casa  
-- CNT_CHILDREN: numero di figli  
-- AMTINCOMETOTAL: reddito annuale  
-- NAMEINCOMETYPE: tipo di reddito  
-- NAMEEDUCATIONTYPE: livello di educazione  
-- NAMEFAMILYSTATUS: stato civile  
-- NAMEHOUSINGTYPE: tipo di abitazione  
-- DAYS_BIRTH: numero di giorni trascorsi dalla nascita  
-- DAYS_EMPLOYED: numero di giorni trascorsi dalla data di assunzione (se positivo, indica il numero di giorni da quando è disoccupato)  
-- FLAG_MOBIL: indicatore della presenza di un numero di cellulare  
-- FLAGWORKPHONE: indicatore della presenza di un numero di telefono di lavoro  
-- FLAG_PHONE: indicatore della presenza di un numero di telefono  
-- FLAG_EMAIL: indicatore della presenza di un indirizzo email  
-- OCCUPATION_TYPE: tipo di occupazione  
-- CNTFAMMEMBERS: numero di familiari  
-- TARGET: variabile che vale 1 se il cliente ha una elevata affidabilità creditizia (pagamento costante delle rate), 0 altrimenti.
+### Dataset columns
+- ID: customer identification number  
+- CODE_GENDER: customer's gender  
+- FLAGOWNCAR: indicator of car ownership  
+- FLAGOWNREALTY: indicator of home ownership  
+- CNT_CHILDREN: number of children  
+- AMTINCOMETOTAL: annual income  
+- NAMEINCOMETYPE: type of income  
+- NAMEEDUCATIONTYPE: education level  
+- NAMEFAMILYSTATUS: marital status  
+- NAMEHOUSINGTYPE: type of housing  
+- DAYS_BIRTH: number of days elapsed since birth  
+- DAYS_EMPLOYED:  number of days elapsed since the hiring date (if positive, it indicates the number of days since becoming unemployed)  
+- FLAG_MOBIL: indicator of having a mobile phone number  
+- FLAGWORKPHONE: indicator of having a work phone number  
+- FLAG_PHONE: indicator of having a phone number 
+- FLAG_EMAIL: indicator of having an email address  
+- OCCUPATION_TYPE: type of occupation  
+- CNTFAMMEMBERS: number of family members  
+- TARGET: variable equal to 1 if the customer has a high credit reliability (consistent installment payments), 0 otherwise.
 
-## Obiettivo
-Devi realizzare un modello che preveda il target dato, ovvero la variabile TARGET che indica se il cliente ha una buona affidabilità creditizia.
+## Objective
+You need to build a model that predicts the given target, namely the TARGET variable, which indicates whether the customer has good creditworthiness.  
 
-## Punto bonus
-Se ad un cliente viene negata la carta di credito, il team deve essere in grado di fornirgli una motivazione. Questo significa che il tuo modello deve fornire delle indicazioni facilmente interpretabili.
+## Bonus point
+If a customer is denied the credit card, the team must be able to provide them with a reason. This means your model must provide easily interpretable indications.
